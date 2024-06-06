@@ -20,3 +20,13 @@
     width: 180px;
     background: black;
 }
+
+.example_button_red {
+    background: red;
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 0.4rem;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+}
