@@ -30,3 +30,26 @@
     padding: 0.4rem 0.8rem;
     cursor: pointer;
 }
+
+.view_based_animations_container {
+    height: 150vh;
+}
+
+.view_based_animations_box {
+    height: 100vh;
+    background-color: #000;
+}
+
+.view_based_animations_ref_div {
+    height: 100vh;
+}
+
+.background-red {
+    background-color: red;
+    transition: 1s all;
+}
+
+.background-blue {
+    background-color: blue;
+    transition: 1s all;
+}
