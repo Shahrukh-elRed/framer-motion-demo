@@ -53,3 +53,18 @@
     background-color: blue;
     transition: 1s all;
 }
+
+.view_based_container {
+    margin: auto;
+    padding: 1.2rem;
+    max-width: 700px;
+}
+
+.scroll_progress_bar {
+    transform-origin: left;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 12px;
+}
