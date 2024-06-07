@@ -9,7 +9,7 @@ const ScrollAnimations = () => {
     )
 
     return (
-        <div>
+        <>
             <motion.div 
                 className="scroll_progress_bar"
                 style={{ 
@@ -146,7 +146,7 @@ const ScrollAnimations = () => {
                     PageMaker including versions of Lorem Ipsum.
                 </p>
             </div>
-        </div>
+        </>
     )
 }
 
