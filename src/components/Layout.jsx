@@ -25,6 +25,9 @@ const Layout = () => {
           <Link to="/horizontal-scroll-carousel" className={location.pathname === "/horizontal-scroll-carousel" ? "active_nav_bar_item" : "nav_bar_item"}>
             <div>Horizontal Scroll Carousel</div>
           </Link>
+          <Link to="/layered-parallax-scroll" className={location.pathname === "/layered-parallax-scroll" ? "active_nav_bar_item" : "nav_bar_item"}>
+            <div>Layered Parallax Scroll</div>
+          </Link>
         </div>
       </nav>
 

@@ -103,3 +103,15 @@
     width: 100%;
     height: 12px;
 }
+
+.layered_parallax_image_full {
+    background-image: url("/src/assets/images/layered-parallax-full.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.layered_parallax_image_cropped {
+    background-image: url("/src/assets/images/layered-parallax-cropped.png");
+    background-position: bottom;
+    background-size: cover;
+}

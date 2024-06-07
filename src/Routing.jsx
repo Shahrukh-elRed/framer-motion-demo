@@ -7,6 +7,7 @@ import ViewBasedAnimations from './components/ViewBasedAnimations';
 import Error404Page from './components/Error404Page';
 import Layout from './components/Layout';
 import HorizontalScrollCarouselPage from './components/HorizontalScrollCarouselPage/HorizontalScrollCarouselPage';
+import LayeredParallaxScroll from "./components/LayeredParallaxScroll/LayeredParallaxScroll";
 
 const Routing = () => {
     return (
@@ -19,6 +20,7 @@ const Routing = () => {
                 <Route path="view-based-animations" element={<ViewBasedAnimations />} />
                 <Route path="scroll-based-animations" element={<ScrollAnimations />} />
                 <Route path="horizontal-scroll-carousel" element={<HorizontalScrollCarouselPage />} />
+                <Route path="layered-parallax-scroll" element={<LayeredParallaxScroll />} />
                 <Route path="*" element={<Error404Page />} />
             </Route>
             </Routes>
