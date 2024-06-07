@@ -6,6 +6,7 @@ import ScrollAnimations from './components/ScrollAnimations';
 import ViewBasedAnimations from './components/ViewBasedAnimations';
 import Error404Page from './components/Error404Page';
 import Layout from './components/Layout';
+import HorizontalScrollCarouselPage from './components/HorizontalScrollCarouselPage/HorizontalScrollCarouselPage';
 
 const Routing = () => {
     return (
@@ -17,6 +18,7 @@ const Routing = () => {
                 <Route path="animation-controls" element={<AnimationControls />} />
                 <Route path="view-based-animations" element={<ViewBasedAnimations />} />
                 <Route path="scroll-based-animations" element={<ScrollAnimations />} />
+                <Route path="horizontal-scroll-carousel" element={<HorizontalScrollCarouselPage />} />
                 <Route path="*" element={<Error404Page />} />
             </Route>
             </Routes>

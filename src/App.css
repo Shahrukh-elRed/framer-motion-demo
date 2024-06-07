@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .page_not_found_container {
     display: flex;
     align-items: center;

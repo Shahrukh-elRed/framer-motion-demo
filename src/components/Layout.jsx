@@ -22,6 +22,9 @@ const Layout = () => {
           <Link to="/scroll-based-animations" className={location.pathname === "/scroll-based-animations" ? "active_nav_bar_item" : "nav_bar_item"}>
             <div>Scroll Based Animations</div>
           </Link>
+          <Link to="/horizontal-scroll-carousel" className={location.pathname === "/horizontal-scroll-carousel" ? "active_nav_bar_item" : "nav_bar_item"}>
+            <div>Horizontal Scroll Carousel</div>
+          </Link>
         </div>
       </nav>
 
