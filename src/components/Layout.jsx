@@ -58,6 +58,9 @@ const Layout = () => {
           <Link to="/aurora-effect" className={location.pathname === "/aurora-effect" ? "active_nav_bar_item" : "nav_bar_item"}>
             <div>Aurora Effect</div>
           </Link>
+          <Link to="/text-image-parallax" className={location.pathname === "/text-image-parallax" ? "active_nav_bar_item" : "nav_bar_item"}>
+            <div>Text Image Parallax</div>
+          </Link>
         </div>
       </motion.nav>
 

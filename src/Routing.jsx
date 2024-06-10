@@ -11,6 +11,7 @@ import LayeredParallaxScroll from "./components/LayeredParallaxScroll/LayeredPar
 import NotionKanbanDragDrop from './components/NotionKanbanDragDrop/NotionKanbanDragDrop';
 import ComplexAnimations from './components/ComplexAnimations/ComplexAnimations';
 import AuroraEffect from './components/AuroraEffect/AuroraEffect';
+import TextImageParallax from './components/TextImageParallax/TextImageParallax';
 
 const Routing = () => {
     return (
@@ -28,6 +29,7 @@ const Routing = () => {
                 <Route path="complex-animations-with-framer-motion" element={<ComplexAnimations />} />
                 <Route path="scroll-animations-masterclass" element={<ScrollAnimations />} />
                 <Route path="aurora-effect" element={<AuroraEffect />} />
+                <Route path="text-image-parallax" element={<TextImageParallax />} />
                 <Route path="*" element={<Error404Page />} />
             </Route>
             </Routes>
