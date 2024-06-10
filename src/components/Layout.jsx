@@ -31,6 +31,9 @@ const Layout = () => {
           <Link to="/advanced-sortable-drag-and-drop" className={location.pathname === "/advanced-sortable-drag-and-drop" ? "active_nav_bar_item" : "nav_bar_item"}>
             <div>Notion Kanban Drag & Drop</div>
           </Link>
+          <Link to="/complex-animations-with-framer-motion" className={location.pathname === "/complex-animations-with-framer-motion" ? "active_nav_bar_item" : "nav_bar_item"}>
+            <div>Complex Animations</div>
+          </Link>
         </div>
       </nav>
 
