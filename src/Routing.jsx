@@ -12,6 +12,7 @@ import NotionKanbanDragDrop from './components/NotionKanbanDragDrop/NotionKanban
 import ComplexAnimations from './components/ComplexAnimations/ComplexAnimations';
 import AuroraEffect from './components/AuroraEffect/AuroraEffect';
 import TextImageParallax from './components/TextImageParallax/TextImageParallax';
+import HoverTiltCard from './components/HoverTiltCard/HoverTiltCard';
 
 const Routing = () => {
     return (
@@ -30,6 +31,7 @@ const Routing = () => {
                 <Route path="scroll-animations-masterclass" element={<ScrollAnimations />} />
                 <Route path="aurora-effect" element={<AuroraEffect />} />
                 <Route path="text-image-parallax" element={<TextImageParallax />} />
+                <Route path="mouse-hover-tilt-card-effect" element={<HoverTiltCard />} />
                 <Route path="*" element={<Error404Page />} />
             </Route>
             </Routes>

@@ -61,9 +61,11 @@ const Layout = () => {
           <Link to="/text-image-parallax" className={location.pathname === "/text-image-parallax" ? "active_nav_bar_item" : "nav_bar_item"}>
             <div>Text Image Parallax</div>
           </Link>
+          <Link to="/mouse-hover-tilt-card-effect" className={location.pathname === "/mouse-hover-tilt-card-effect" ? "active_nav_bar_item" : "nav_bar_item"}>
+            <div>Hover Tilt Card</div>
+          </Link>
         </div>
       </motion.nav>
-
       <Outlet />
     </>
   )
