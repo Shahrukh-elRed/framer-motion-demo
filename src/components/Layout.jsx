@@ -37,6 +37,9 @@ const Layout = () => {
           <Link to="/scroll-animations-masterclass" className={location.pathname === "/scroll-animations-masterclass" ? "active_nav_bar_item" : "nav_bar_item"}>
             <div>Scroll Animations Masterclass</div>
           </Link>
+          <Link to="/aurora-effect" className={location.pathname === "/aurora-effect" ? "active_nav_bar_item" : "nav_bar_item"}>
+            <div>Aurora Effect</div>
+          </Link>
         </div>
       </nav>
 

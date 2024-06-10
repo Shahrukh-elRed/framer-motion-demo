@@ -10,6 +10,7 @@ import HorizontalScrollCarouselPage from './components/HorizontalScrollCarouselP
 import LayeredParallaxScroll from "./components/LayeredParallaxScroll/LayeredParallaxScroll";
 import NotionKanbanDragDrop from './components/NotionKanbanDragDrop/NotionKanbanDragDrop';
 import ComplexAnimations from './components/ComplexAnimations/ComplexAnimations';
+import AuroraEffect from './components/AuroraEffect/AuroraEffect';
 
 const Routing = () => {
     return (
@@ -26,6 +27,7 @@ const Routing = () => {
                 <Route path="advanced-sortable-drag-and-drop" element={<NotionKanbanDragDrop />} />
                 <Route path="complex-animations-with-framer-motion" element={<ComplexAnimations />} />
                 <Route path="scroll-animations-masterclass" element={<ScrollAnimations />} />
+                <Route path="aurora-effect" element={<AuroraEffect />} />
                 <Route path="*" element={<Error404Page />} />
             </Route>
             </Routes>
