@@ -34,6 +34,9 @@ const Layout = () => {
           <Link to="/complex-animations-with-framer-motion" className={location.pathname === "/complex-animations-with-framer-motion" ? "active_nav_bar_item" : "nav_bar_item"}>
             <div>Complex Animations</div>
           </Link>
+          <Link to="/scroll-animations-masterclass" className={location.pathname === "/scroll-animations-masterclass" ? "active_nav_bar_item" : "nav_bar_item"}>
+            <div>Scroll Animations Masterclass</div>
+          </Link>
         </div>
       </nav>
 

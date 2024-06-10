@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AnimationControls from './components/AnimationControls';
 import BasicsOfMotion from './components/BasicsOfMotion';
 import Gestures from './components/Gestures';
-import ScrollAnimations from './components/ScrollAnimations';
+import ScrollAnimations from './components/ScrollAnimationMasterclass/ScrollAnimations';
 import ViewBasedAnimations from './components/ViewBasedAnimations';
 import Error404Page from './components/Error404Page';
 import Layout from './components/Layout';
@@ -25,6 +25,7 @@ const Routing = () => {
                 <Route path="layered-parallax-scroll" element={<LayeredParallaxScroll />} />
                 <Route path="advanced-sortable-drag-and-drop" element={<NotionKanbanDragDrop />} />
                 <Route path="complex-animations-with-framer-motion" element={<ComplexAnimations />} />
+                <Route path="scroll-animations-masterclass" element={<ScrollAnimations />} />
                 <Route path="*" element={<Error404Page />} />
             </Route>
             </Routes>
