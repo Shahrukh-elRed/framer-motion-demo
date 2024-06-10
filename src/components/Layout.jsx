@@ -1,11 +1,29 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { useState } from "react";
 
 const Layout = () => {
   const location = useLocation();
+  const [hidden, setHidden] = useState(false);
+  
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    latest > previous && latest > 150 ? setHidden(true) : setHidden(false);
+  });
 
   return (
     <>
-      <nav>
+      <motion.nav
+        variants={{ 
+          visible: { y: 0 },
+          hidden: { y: "-100%"}
+        }}
+        animate={ hidden ? "hidden" : "visible" }
+        transition={{ duration: 0.35, ease: "easeInOut" }}
+        style={{ position: "fixed", top: 0, left: 0, zIndex: 30 }}
+      >
         <div className="nav_bar">
           <Link to="/" className={location.pathname === "/" ? "active_nav_bar_item" : "nav_bar_item"}>
             <div>Home</div>
@@ -41,7 +59,7 @@ const Layout = () => {
             <div>Aurora Effect</div>
           </Link>
         </div>
-      </nav>
+      </motion.nav>
 
       <Outlet />
     </>
