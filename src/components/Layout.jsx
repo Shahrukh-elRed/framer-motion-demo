@@ -28,6 +28,9 @@ const Layout = () => {
           <Link to="/layered-parallax-scroll" className={location.pathname === "/layered-parallax-scroll" ? "active_nav_bar_item" : "nav_bar_item"}>
             <div>Layered Parallax Scroll</div>
           </Link>
+          <Link to="/advanced-sortable-drag-and-drop" className={location.pathname === "/advanced-sortable-drag-and-drop" ? "active_nav_bar_item" : "nav_bar_item"}>
+            <div>Notion Kanban Drag & Drop</div>
+          </Link>
         </div>
       </nav>
 

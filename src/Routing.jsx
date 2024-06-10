@@ -8,6 +8,7 @@ import Error404Page from './components/Error404Page';
 import Layout from './components/Layout';
 import HorizontalScrollCarouselPage from './components/HorizontalScrollCarouselPage/HorizontalScrollCarouselPage';
 import LayeredParallaxScroll from "./components/LayeredParallaxScroll/LayeredParallaxScroll";
+import NotionKanbanDragDrop from './components/NotionKanbanDragDrop/NotionKanbanDragDrop';
 
 const Routing = () => {
     return (
@@ -21,6 +22,7 @@ const Routing = () => {
                 <Route path="scroll-based-animations" element={<ScrollAnimations />} />
                 <Route path="horizontal-scroll-carousel" element={<HorizontalScrollCarouselPage />} />
                 <Route path="layered-parallax-scroll" element={<LayeredParallaxScroll />} />
+                <Route path="advanced-sortable-drag-and-drop" element={<NotionKanbanDragDrop />} />
                 <Route path="*" element={<Error404Page />} />
             </Route>
             </Routes>
