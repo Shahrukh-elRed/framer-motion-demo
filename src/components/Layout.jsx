@@ -173,6 +173,16 @@ const Layout = () => {
           >
             <div>Shifting DropDown</div>
           </Link>
+          <Link
+            to="/flyout-link"
+            className={
+              location.pathname === "/flyout-link"
+                ? "active_nav_bar_item"
+                : "nav_bar_item"
+            }
+          >
+            <div>Flyout Link</div>
+          </Link>
         </div>
       </motion.nav>
       <Outlet />

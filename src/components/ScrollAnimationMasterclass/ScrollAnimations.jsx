@@ -9,8 +9,8 @@ const ScrollAnimations = () => {
     <div className="bg-zinc-950 text-zinc-50">
       <div className="relative z-10">
         <div className="h-[150vh]" />
-        <WhileInView />
-        {/* <UseInView /> */}
+        {/* <WhileInView /> */}
+        <UseInView />
         {/* <UseScrollBasic /> */}
         {/* <UseScrollAdvanced /> */}
         {/* <UseScrollWithContainer /> */}
