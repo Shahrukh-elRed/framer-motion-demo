@@ -153,7 +153,6 @@ const Layout = () => {
           >
             <div>Hover Tilt Card</div>
           </Link>
-
           <Link
             to="/swipe-carousel"
             className={
@@ -163,6 +162,16 @@ const Layout = () => {
             }
           >
             <div>Swipe Carousel</div>
+          </Link>
+          <Link
+            to="/shifting-dropdown"
+            className={
+              location.pathname === "/shifting-dropdown"
+                ? "active_nav_bar_item"
+                : "nav_bar_item"
+            }
+          >
+            <div>Shifting DropDown</div>
           </Link>
         </div>
       </motion.nav>

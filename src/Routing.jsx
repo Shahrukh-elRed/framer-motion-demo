@@ -14,6 +14,7 @@ import AuroraEffect from "./components/AuroraEffect/AuroraEffect";
 import TextImageParallax from "./components/TextImageParallax/TextImageParallax";
 import HoverTiltCard from "./components/HoverTiltCard/HoverTiltCard";
 import SwipeCarousel from "./components/SwipeCarousel/SwipeCarousel";
+import ShiftingDropDown from "./components/ShiftingDropDown/ShiftingDropDown";
 
 const Routing = () => {
   return (
@@ -58,6 +59,7 @@ const Routing = () => {
             element={<HoverTiltCard />}
           />
           <Route path="swipe-carousel" element={<SwipeCarousel />} />
+          <Route path="shifting-dropdown" element={<ShiftingDropDown />} />
           <Route path="*" element={<Error404Page />} />
         </Route>
       </Routes>

@@ -49,29 +49,32 @@ const SwipeCarousel = () => {
   };
 
   return (
-    <div className="relative overflow-hidden bg-neutral-950 py-8 mt-24">
-      <motion.div
-        drag="x"
-        dragConstraints={{
-          left: 0,
-          right: 0,
-        }}
-        style={{
-          x: dragX,
-        }}
-        animate={{
-          translateX: `-${imgIndex * 100}%`,
-        }}
-        transition={SPRING_OPTIONS}
-        onDragEnd={onDragEnd}
-        className="flex cursor-grab items-center active:cursor-grabbing"
-      >
-        <Images imgIndex={imgIndex} imgs={imgs} />
-      </motion.div>
+    <>
+      <div className="h-[300px] bg-neutral-950" />
+      <div className="relative overflow-hidden bg-neutral-950 py-8">
+        <motion.div
+          drag="x"
+          dragConstraints={{
+            left: 0,
+            right: 0,
+          }}
+          style={{
+            x: dragX,
+          }}
+          animate={{
+            translateX: `-${imgIndex * 100}%`,
+          }}
+          transition={SPRING_OPTIONS}
+          onDragEnd={onDragEnd}
+          className="flex cursor-grab items-center active:cursor-grabbing"
+        >
+          <Images imgIndex={imgIndex} imgs={imgs} />
+        </motion.div>
 
-      <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} imgs={imgs} />
-      <GradientEdges />
-    </div>
+        <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} imgs={imgs} />
+        <GradientEdges />
+      </div>
+    </>
   );
 };
 

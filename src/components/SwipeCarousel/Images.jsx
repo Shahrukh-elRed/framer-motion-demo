@@ -23,7 +23,7 @@ const Images = ({ imgIndex, imgs }) => {
               scale: imgIndex === idx ? 0.95 : 0.85,
             }}
             transition={SPRING_OPTIONS}
-            className="aspect-video w-screen shrink-0 rounded-xl bg-neutral-800 object-cover h-[50vh]"
+            className="aspect-video w-[100%] shrink-0 rounded-xl bg-neutral-800 object-cover h-[50vh]"
           />
         );
       })}
