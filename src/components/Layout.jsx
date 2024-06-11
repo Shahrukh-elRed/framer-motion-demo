@@ -183,6 +183,16 @@ const Layout = () => {
           >
             <div>Flyout Link</div>
           </Link>
+          <Link
+            to="/modern-grid-landing-page"
+            className={
+              location.pathname === "/modern-grid-landing-page"
+                ? "active_nav_bar_item"
+                : "nav_bar_item"
+            }
+          >
+            <div>Modern Grid Landing Page</div>
+          </Link>
         </div>
       </motion.nav>
       <Outlet />
