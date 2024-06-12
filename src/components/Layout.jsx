@@ -253,6 +253,16 @@ const Layout = () => {
           >
             <div>Squishy Card</div>
           </Link>
+          <Link
+            to="/drag-close-drawer"
+            className={
+              location.pathname === "/drag-close-drawer"
+                ? "active_nav_bar_item"
+                : "nav_bar_item"
+            }
+          >
+            <div>Drag Close Drawer</div>
+          </Link>
         </div>
       </motion.nav>
       <Outlet />

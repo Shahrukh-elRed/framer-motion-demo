@@ -23,6 +23,7 @@ import SlideTabsExample from "./components/SlideTabsExample/SlideTabsExample";
 import HoverButtonWrapper from "./components/HoverButtonWrapper/HoverButtonWrapper";
 import AnimatedHamburger from "./components/AnimatedHamburger/AnimatedHamburger";
 import SquishyCard from "./components/SquishyCard/SquishyCard";
+import DragCloseDrawerExample from "./components/DragCloseDrawerExample/DragCloseDrawerExample";
 
 const Routing = () => {
   return (
@@ -85,6 +86,10 @@ const Routing = () => {
             element={<AnimatedHamburger />}
           />
           <Route path="squishy-card" element={<SquishyCard />} />
+          <Route
+            path="drag-close-drawer"
+            element={<DragCloseDrawerExample />}
+          />
           <Route path="*" element={<Error404Page />} />
         </Route>
       </Routes>
