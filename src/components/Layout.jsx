@@ -243,6 +243,16 @@ const Layout = () => {
           >
             <div>Animated Hamburger</div>
           </Link>
+          <Link
+            to="/squishy-card"
+            className={
+              location.pathname === "/squishy-card"
+                ? "active_nav_bar_item"
+                : "nav_bar_item"
+            }
+          >
+            <div>Squishy Card</div>
+          </Link>
         </div>
       </motion.nav>
       <Outlet />

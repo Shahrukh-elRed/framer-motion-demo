@@ -22,6 +22,7 @@ import StripeAnimatedLinks from "./components/StripeAnimatedLinks/StripeAnimated
 import SlideTabsExample from "./components/SlideTabsExample/SlideTabsExample";
 import HoverButtonWrapper from "./components/HoverButtonWrapper/HoverButtonWrapper";
 import AnimatedHamburger from "./components/AnimatedHamburger/AnimatedHamburger";
+import SquishyCard from "./components/SquishyCard/SquishyCard";
 
 const Routing = () => {
   return (
@@ -83,6 +84,7 @@ const Routing = () => {
             path="animated-hamburger-menu-button"
             element={<AnimatedHamburger />}
           />
+          <Route path="squishy-card" element={<SquishyCard />} />
           <Route path="*" element={<Error404Page />} />
         </Route>
       </Routes>
