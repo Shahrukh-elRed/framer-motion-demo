@@ -193,6 +193,16 @@ const Layout = () => {
           >
             <div>Modern Grid Landing Page</div>
           </Link>
+          <Link
+            to="/hover-image-links"
+            className={
+              location.pathname === "/hover-image-links"
+                ? "active_nav_bar_item"
+                : "nav_bar_item"
+            }
+          >
+            <div>Hover Image Links</div>
+          </Link>
         </div>
       </motion.nav>
       <Outlet />

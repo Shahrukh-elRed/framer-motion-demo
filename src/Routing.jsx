@@ -17,6 +17,7 @@ import SwipeCarousel from "./components/SwipeCarousel/SwipeCarousel";
 import ShiftingDropDown from "./components/ShiftingDropDown/ShiftingDropDown";
 import FlyoutLinkExample from "./components/FlyoutLinkExample/FlyoutLinkExample";
 import RevealBento from "./components/RevealBento/RevealBento";
+import HoverImageLinks from "./components/HoverImageLinks/HoverImageLinks";
 
 const Routing = () => {
   return (
@@ -64,6 +65,7 @@ const Routing = () => {
           <Route path="shifting-dropdown" element={<ShiftingDropDown />} />
           <Route path="flyout-link" element={<FlyoutLinkExample />} />
           <Route path="modern-grid-landing-page" element={<RevealBento />} />
+          <Route path="hover-image-links" element={<HoverImageLinks />} />
           <Route path="*" element={<Error404Page />} />
         </Route>
       </Routes>
