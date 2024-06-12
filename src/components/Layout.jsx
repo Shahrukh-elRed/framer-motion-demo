@@ -233,6 +233,16 @@ const Layout = () => {
           >
             <div>Button Hover Animation</div>
           </Link>
+          <Link
+            to="/animated-hamburger-menu-button"
+            className={
+              location.pathname === "/animated-hamburger-menu-button"
+                ? "active_nav_bar_item"
+                : "nav_bar_item"
+            }
+          >
+            <div>Animated Hamburger</div>
+          </Link>
         </div>
       </motion.nav>
       <Outlet />

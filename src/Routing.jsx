@@ -21,6 +21,7 @@ import HoverImageLinks from "./components/HoverImageLinks/HoverImageLinks";
 import StripeAnimatedLinks from "./components/StripeAnimatedLinks/StripeAnimatedLinks";
 import SlideTabsExample from "./components/SlideTabsExample/SlideTabsExample";
 import HoverButtonWrapper from "./components/HoverButtonWrapper/HoverButtonWrapper";
+import AnimatedHamburger from "./components/AnimatedHamburger/AnimatedHamburger";
 
 const Routing = () => {
   return (
@@ -77,6 +78,10 @@ const Routing = () => {
           <Route
             path="button-hover-animation"
             element={<HoverButtonWrapper />}
+          />
+          <Route
+            path="animated-hamburger-menu-button"
+            element={<AnimatedHamburger />}
           />
           <Route path="*" element={<Error404Page />} />
         </Route>
