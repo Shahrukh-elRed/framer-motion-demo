@@ -203,6 +203,16 @@ const Layout = () => {
           >
             <div>Hover Image Links</div>
           </Link>
+          <Link
+            to="/stripe-animated-links"
+            className={
+              location.pathname === "/stripe-animated-links"
+                ? "active_nav_bar_item"
+                : "nav_bar_item"
+            }
+          >
+            <div>Stripe's Animated Links</div>
+          </Link>
         </div>
       </motion.nav>
       <Outlet />
