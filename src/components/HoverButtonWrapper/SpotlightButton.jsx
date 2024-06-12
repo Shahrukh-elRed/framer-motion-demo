@@ -25,8 +25,8 @@ const SpotlightButton = () => {
     btnRef.current.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
-      btnRef.current.removeEventListener("mousemove", handleMouseMove);
-      btnRef.current.removeEventListener("mouseleave", handleMouseLeave);
+      btnRef.current?.removeEventListener("mousemove", handleMouseMove);
+      btnRef.current?.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
 
