@@ -19,6 +19,7 @@ import FlyoutLinkExample from "./components/FlyoutLinkExample/FlyoutLinkExample"
 import RevealBento from "./components/RevealBento/RevealBento";
 import HoverImageLinks from "./components/HoverImageLinks/HoverImageLinks";
 import StripeAnimatedLinks from "./components/StripeAnimatedLinks/StripeAnimatedLinks";
+import SlideTabsExample from "./components/SlideTabsExample/SlideTabsExample";
 
 const Routing = () => {
   return (
@@ -71,6 +72,7 @@ const Routing = () => {
             path="stripe-animated-links"
             element={<StripeAnimatedLinks />}
           />
+          <Route path="animated-slide-navbar" element={<SlideTabsExample />} />
           <Route path="*" element={<Error404Page />} />
         </Route>
       </Routes>

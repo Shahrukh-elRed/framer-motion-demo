@@ -213,6 +213,16 @@ const Layout = () => {
           >
             <div>Stripe's Animated Links</div>
           </Link>
+          <Link
+            to="/animated-slide-navbar"
+            className={
+              location.pathname === "/animated-slide-navbar"
+                ? "active_nav_bar_item"
+                : "nav_bar_item"
+            }
+          >
+            <div>Animated Slide Navbar</div>
+          </Link>
         </div>
       </motion.nav>
       <Outlet />
