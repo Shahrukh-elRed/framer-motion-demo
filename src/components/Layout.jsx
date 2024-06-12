@@ -263,6 +263,16 @@ const Layout = () => {
           >
             <div>Drag Close Drawer</div>
           </Link>
+          <Link
+            to="/levitating-phone-animation"
+            className={
+              location.pathname === "/levitating-phone-animation"
+                ? "active_nav_bar_item"
+                : "nav_bar_item"
+            }
+          >
+            <div>Levitating Phone Animation</div>
+          </Link>
         </div>
       </motion.nav>
       <Outlet />

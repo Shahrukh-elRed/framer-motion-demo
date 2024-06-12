@@ -24,6 +24,7 @@ import HoverButtonWrapper from "./components/HoverButtonWrapper/HoverButtonWrapp
 import AnimatedHamburger from "./components/AnimatedHamburger/AnimatedHamburger";
 import SquishyCard from "./components/SquishyCard/SquishyCard";
 import DragCloseDrawerExample from "./components/DragCloseDrawerExample/DragCloseDrawerExample";
+import LevitatingPhoneAnimation from "./components/LevitatingPhoneAnimation/LevitatingPhoneAnimation";
 
 const Routing = () => {
   return (
@@ -89,6 +90,10 @@ const Routing = () => {
           <Route
             path="drag-close-drawer"
             element={<DragCloseDrawerExample />}
+          />
+          <Route
+            path="levitating-phone-animation"
+            element={<LevitatingPhoneAnimation />}
           />
           <Route path="*" element={<Error404Page />} />
         </Route>
