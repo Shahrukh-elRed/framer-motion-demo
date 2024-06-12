@@ -223,6 +223,16 @@ const Layout = () => {
           >
             <div>Animated Slide Navbar</div>
           </Link>
+          <Link
+            to="/button-hover-animation"
+            className={
+              location.pathname === "/button-hover-animation"
+                ? "active_nav_bar_item"
+                : "nav_bar_item"
+            }
+          >
+            <div>Button Hover Animation</div>
+          </Link>
         </div>
       </motion.nav>
       <Outlet />
