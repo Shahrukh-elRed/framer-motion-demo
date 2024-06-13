@@ -26,6 +26,7 @@ import SquishyCard from "./components/SquishyCard/SquishyCard";
 import DragCloseDrawerExample from "./components/DragCloseDrawerExample/DragCloseDrawerExample";
 import LevitatingPhoneAnimation from "./components/LevitatingPhoneAnimation/LevitatingPhoneAnimation";
 import BubbleTextAnimation from "./components/BubbleTextAnimation/BubbleTextAnimation";
+import TrippyScroll from "./components/TrippyScroll/TrippyScroll";
 
 const Routing = () => {
   return (
@@ -100,6 +101,7 @@ const Routing = () => {
             path="bubble-text-hover-animation"
             element={<BubbleTextAnimation />}
           />
+          <Route path="trippy-scroll-animation" element={<TrippyScroll />} />
           <Route path="*" element={<Error404Page />} />
         </Route>
       </Routes>

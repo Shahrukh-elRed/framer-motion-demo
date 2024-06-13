@@ -231,7 +231,7 @@ const Layout = () => {
                 : "nav_bar_item"
             }
           >
-            <div>Button Hover Animation</div>
+            <div>Button Hover</div>
           </Link>
           <Link
             to="/animated-hamburger-menu-button"
@@ -271,7 +271,7 @@ const Layout = () => {
                 : "nav_bar_item"
             }
           >
-            <div>Levitating Phone Animation</div>
+            <div>Levitating Phone</div>
           </Link>
           <Link
             to="/bubble-text-hover-animation"
@@ -282,6 +282,16 @@ const Layout = () => {
             }
           >
             <div>Bubble Text</div>
+          </Link>
+          <Link
+            to="/trippy-scroll-animation"
+            className={
+              location.pathname === "/trippy-scroll-animation"
+                ? "active_nav_bar_item"
+                : "nav_bar_item"
+            }
+          >
+            <div>Trippy Scroll</div>
           </Link>
         </div>
       </motion.nav>
