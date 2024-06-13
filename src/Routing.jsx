@@ -25,6 +25,7 @@ import AnimatedHamburger from "./components/AnimatedHamburger/AnimatedHamburger"
 import SquishyCard from "./components/SquishyCard/SquishyCard";
 import DragCloseDrawerExample from "./components/DragCloseDrawerExample/DragCloseDrawerExample";
 import LevitatingPhoneAnimation from "./components/LevitatingPhoneAnimation/LevitatingPhoneAnimation";
+import BubbleTextAnimation from "./components/BubbleTextAnimation/BubbleTextAnimation";
 
 const Routing = () => {
   return (
@@ -94,6 +95,10 @@ const Routing = () => {
           <Route
             path="levitating-phone-animation"
             element={<LevitatingPhoneAnimation />}
+          />
+          <Route
+            path="bubble-text-hover-animation"
+            element={<BubbleTextAnimation />}
           />
           <Route path="*" element={<Error404Page />} />
         </Route>

@@ -1,0 +1,32 @@
+.bubble-text-hover-animation {
+  transition: 0.35s font-weight, 0.35s color;
+}
+
+.bubble-text-hover-animation:hover {
+  font-weight: 900;
+  color: rgb(238, 242, 255);
+}
+
+/* To the right */
+.bubble-text-hover-animation:hover + .bubble-text-hover-animation {
+  font-weight: 500;
+  color: rgb(199, 210, 254);
+}
+
+.bubble-text-hover-animation:hover
+  + .bubble-text-hover-animation
+  + .bubble-text-hover-animation {
+  font-weight: 400;
+}
+
+/* To the left */
+.bubble-text-hover-animation:has(+ .bubble-text-hover-animation:hover) {
+  font-weight: 500;
+  color: rgb(199, 210, 254);
+}
+
+.bubble-text-hover-animation:has(
+    + .bubble-text-hover-animation + .bubble-text-hover-animation:hover
+  ) {
+  font-weight: 400;
+}

@@ -273,6 +273,16 @@ const Layout = () => {
           >
             <div>Levitating Phone Animation</div>
           </Link>
+          <Link
+            to="/bubble-text-hover-animation"
+            className={
+              location.pathname === "/bubble-text-hover-animation"
+                ? "active_nav_bar_item"
+                : "nav_bar_item"
+            }
+          >
+            <div>Bubble Text</div>
+          </Link>
         </div>
       </motion.nav>
       <Outlet />
